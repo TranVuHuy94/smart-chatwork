@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Chatwork — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1f2328; --muted: #57606a; --accent: #0969da;
+    --card: #f6f8fa; --border: #d0d7de;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0d1117; --fg: #e6edf3; --muted: #8b949e; --accent: #58a6ff;
+            --card: #161b22; --border: #30363d; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 16px/1.65 -apple-system, "Segoe UI", "Hiragino Sans", "Yu Gothic UI", Roboto, sans-serif; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
+  h1 { font-size: 1.6em; margin: 0.5em 0; }
+  h2 { font-size: 1.15em; margin-top: 1.8em; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+  .muted { color: var(--muted); font-size: 0.9em; }
+  .langs { display: flex; gap: 8px; margin: 18px 0 8px; }
+  .langs button { cursor: pointer; border: 1px solid var(--border); background: var(--card);
+    color: var(--fg); border-radius: 999px; padding: 6px 16px; font-size: 14px; }
+  .langs button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+  section[data-lang] { display: none; }
+  section[data-lang].active { display: block; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.92em; }
+  th, td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: var(--card); }
+  code { background: var(--card); border: 1px solid var(--border); border-radius: 4px; padding: 1px 5px; font-size: 0.9em; }
+  .box { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; margin: 14px 0; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="muted">Smart Chatwork — Chrome Extension</p>
+  <h1>Privacy Policy / Chính sách quyền riêng tư / プライバシーポリシー</h1>
+  <p class="muted">Last updated / Cập nhật / 最終更新: 2026-08-09</p>
+
+  <div class="langs" role="group" aria-label="Language">
+    <button data-pick="en" aria-pressed="true">English</button>
+    <button data-pick="vi" aria-pressed="false">Tiếng Việt</button>
+    <button data-pick="ja" aria-pressed="false">日本語</button>
+  </div>
+
+  <section data-lang="en" class="active">
+    <div class="box"><strong>Summary:</strong> Smart Chatwork does not collect, transmit, sell, or share any of your data. Everything the extension stores stays inside your own browser. The extension makes no network requests to any server of its own — it has none.</div>
+
+    <h2>1. What this extension does</h2>
+    <p>Smart Chatwork is an independent, third-party browser extension that adds productivity features (a one-tap template bar, @‑mention suggestions with automatic romaji, slash templates, and a related-messages quick view) to the Chatwork web app at <code>https://www.chatwork.com</code>. It runs only on that site.</p>
+
+    <h2>2. Data the extension stores — locally only</h2>
+    <p>To provide its features, the extension keeps the following data in your browser's local extension storage (<code>chrome.storage.local</code>) and page-local storage (<code>localStorage</code>). This data never leaves your device:</p>
+    <table>
+      <tr><th>Data</th><th>Purpose</th></tr>
+      <tr><td>Your settings (feature toggles, language, honorific suffix)</td><td>Remember your preferences</td></tr>
+      <tr><td>Templates, groups, and romaji readings you create</td><td>Provide the template and mention features</td></tr>
+      <tr><td>Member names / Chatwork IDs / avatar URLs of rooms you open (learned list)</td><td>Populate the group-member picker in the settings popup</td></tr>
+      <tr><td>Recently mentioned members and template usage counts</td><td>Rank frequently used items first</td></tr>
+    </table>
+
+    <h2>3. Data the extension reads</h2>
+    <p>While you use Chatwork, the extension reads — in memory, on your device only — the room member list, loaded timeline messages, and your account name that the Chatwork web app itself has already loaded, in order to render mention suggestions, template variables, and the related-messages view. It does not read your Chatwork password, API tokens, or cookies.</p>
+
+    <h2>4. Data collection and sharing: none</h2>
+    <ul>
+      <li>No data is transmitted off your device by this extension.</li>
+      <li>No analytics, tracking, advertising, or fingerprinting.</li>
+      <li>No data is sold or shared with third parties.</li>
+      <li>No remote code is loaded or executed.</li>
+    </ul>
+
+    <h2>5. Permissions</h2>
+    <p>The extension requests a single permission, <code>storage</code>, used to save your settings and templates locally. Its content scripts run only on <code>https://www.chatwork.com/*</code>.</p>
+
+    <h2>6. Data removal</h2>
+    <p>Uninstalling the extension removes all data it stored. You can also clear individual items from the settings popup at any time.</p>
+
+    <h2>7. Contact</h2>
+    <p>Questions about this policy: <a href="mailto:huytv@kaopiz.com">huytv@kaopiz.com</a></p>
+
+    <h2>8. Affiliation</h2>
+    <p>Smart Chatwork is an independent third-party extension and is not affiliated with, endorsed by, or sponsored by kubell Co., Ltd. (Chatwork). "Chatwork" is a trademark of its respective owner.</p>
+  </section>
+
+  <section data-lang="vi">
+    <div class="box"><strong>Tóm tắt:</strong> Smart Chatwork không thu thập, không gửi đi, không bán, không chia sẻ bất kỳ dữ liệu nào của bạn. Mọi thứ extension lưu đều nằm trong trình duyệt của chính bạn. Extension không gọi mạng tới bất kỳ máy chủ nào của riêng nó — vì nó không có máy chủ.</div>
+
+    <h2>1. Extension này làm gì</h2>
+    <p>Smart Chatwork là extension độc lập của bên thứ ba, bổ sung các tính năng năng suất (thanh mẫu 1 chạm, gợi ý @‑mention với romaji tự động, / template, và xem nhanh tin liên quan) cho Chatwork bản web tại <code>https://www.chatwork.com</code>. Extension chỉ chạy trên trang này.</p>
+
+    <h2>2. Dữ liệu extension lưu — chỉ trên máy bạn</h2>
+    <p>Để hoạt động, extension lưu các dữ liệu sau trong bộ nhớ cục bộ của trình duyệt (<code>chrome.storage.local</code> và <code>localStorage</code>). Dữ liệu này không bao giờ rời khỏi thiết bị của bạn:</p>
+    <table>
+      <tr><th>Dữ liệu</th><th>Mục đích</th></tr>
+      <tr><td>Cài đặt của bạn (bật/tắt tính năng, ngôn ngữ, hậu tố tên)</td><td>Ghi nhớ tuỳ chọn</td></tr>
+      <tr><td>Template, nhóm, cách đọc romaji bạn tự tạo</td><td>Cung cấp tính năng template và mention</td></tr>
+      <tr><td>Tên / Chatwork ID / URL avatar member của các room bạn mở (danh sách tự học)</td><td>Hiển thị picker chọn member trong popup cài đặt</td></tr>
+      <tr><td>Người được mention gần đây và số lần dùng template</td><td>Xếp mục hay dùng lên đầu</td></tr>
+    </table>
+
+    <h2>3. Dữ liệu extension đọc</h2>
+    <p>Khi bạn dùng Chatwork, extension đọc — chỉ trong bộ nhớ, trên máy bạn — danh sách member của room, các tin đã tải trong khung chat, và tên tài khoản của bạn (những dữ liệu mà chính trang Chatwork đã tải sẵn) để hiển thị gợi ý mention, biến template và popup tin liên quan. Extension không đọc mật khẩu, API token hay cookie Chatwork của bạn.</p>
+
+    <h2>4. Thu thập & chia sẻ dữ liệu: không có</h2>
+    <ul>
+      <li>Không có dữ liệu nào được gửi ra khỏi thiết bị của bạn.</li>
+      <li>Không analytics, không tracking, không quảng cáo.</li>
+      <li>Không bán hay chia sẻ dữ liệu cho bên thứ ba.</li>
+      <li>Không tải hay thực thi code từ xa.</li>
+    </ul>
+
+    <h2>5. Quyền (permissions)</h2>
+    <p>Extension chỉ xin một quyền duy nhất là <code>storage</code>, dùng để lưu cài đặt và template cục bộ. Content script chỉ chạy trên <code>https://www.chatwork.com/*</code>.</p>
+
+    <h2>6. Xoá dữ liệu</h2>
+    <p>Gỡ extension là toàn bộ dữ liệu nó lưu bị xoá. Bạn cũng có thể xoá từng mục trong popup cài đặt bất kỳ lúc nào.</p>
+
+    <h2>7. Liên hệ</h2>
+    <p>Thắc mắc về chính sách này: <a href="mailto:huytv@kaopiz.com">huytv@kaopiz.com</a></p>
+
+    <h2>8. Tuyên bố độc lập</h2>
+    <p>Smart Chatwork là extension độc lập của bên thứ ba, không liên kết, không được bảo trợ hay tài trợ bởi 株式会社kubell (Chatwork). "Chatwork" là thương hiệu thuộc về chủ sở hữu tương ứng.</p>
+  </section>
+
+  <section data-lang="ja">
+    <div class="box"><strong>要約:</strong> Smart Chatwork は、ユーザーのデータを一切収集・送信・販売・共有しません。拡張機能が保存するデータはすべてお使いのブラウザ内にのみ保存されます。本拡張機能は独自のサーバーを持たず、外部への通信も行いません。</div>
+
+    <h2>1. この拡張機能について</h2>
+    <p>Smart Chatwork は、<code>https://www.chatwork.com</code> の Chatwork ウェブ版に業務効率化機能(ワンクリック定型文バー、ローマ字自動対応の@メンション補完、/テンプレート、関連メッセージのクイックビュー)を追加する、独立したサードパーティ製拡張機能です。このサイト上でのみ動作します。</p>
+
+    <h2>2. 保存するデータ — ローカルのみ</h2>
+    <p>機能の提供のため、以下のデータをブラウザのローカルストレージ(<code>chrome.storage.local</code> および <code>localStorage</code>)に保存します。これらのデータが端末の外に出ることはありません:</p>
+    <table>
+      <tr><th>データ</th><th>目的</th></tr>
+      <tr><td>設定(機能のオン/オフ、言語、敬称)</td><td>設定内容の記憶</td></tr>
+      <tr><td>作成したテンプレート・グループ・ローマ字読み</td><td>テンプレート/メンション機能の提供</td></tr>
+      <tr><td>開いたルームのメンバー名・Chatwork ID・アバターURL(学習リスト)</td><td>設定ポップアップのメンバー選択に使用</td></tr>
+      <tr><td>最近メンションした相手・テンプレート使用回数</td><td>よく使う項目を上位に表示</td></tr>
+    </table>
+
+    <h2>3. 読み取るデータ</h2>
+    <p>Chatwork の利用中、メンション候補・テンプレート変数・関連メッセージ表示のために、Chatwork ウェブアプリ自身が読み込んだルームメンバー一覧・タイムラインのメッセージ・自分のアカウント名を、端末内のメモリ上でのみ参照します。パスワード、APIトークン、Cookie は読み取りません。</p>
+
+    <h2>4. データの収集・共有: なし</h2>
+    <ul>
+      <li>本拡張機能がデータを端末外へ送信することはありません。</li>
+      <li>アナリティクス、トラッキング、広告は一切ありません。</li>
+      <li>第三者へのデータの販売・共有はありません。</li>
+      <li>リモートコードの読み込み・実行はありません。</li>
+    </ul>
+
+    <h2>5. 権限</h2>
+    <p>要求する権限は <code>storage</code> のみで、設定とテンプレートのローカル保存に使用します。コンテンツスクリプトは <code>https://www.chatwork.com/*</code> でのみ動作します。</p>
+
+    <h2>6. データの削除</h2>
+    <p>拡張機能をアンインストールすると、保存されたデータはすべて削除されます。設定ポップアップから個別に削除することもできます。</p>
+
+    <h2>7. お問い合わせ</h2>
+    <p>本ポリシーに関するお問い合わせ: <a href="mailto:huytv@kaopiz.com">huytv@kaopiz.com</a></p>
+
+    <h2>8. 免責事項</h2>
+    <p>Smart Chatwork は独立したサードパーティ製の拡張機能であり、株式会社kubell(Chatwork)とは提携・承認・後援関係にありません。「Chatwork」は各権利者の商標です。</p>
+  </section>
+</div>
+<script>
+  const btns = document.querySelectorAll('.langs button');
+  const pick = (lang) => {
+    document.querySelectorAll('section[data-lang]').forEach(s => s.classList.toggle('active', s.dataset.lang === lang));
+    btns.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.pick === lang)));
+    document.documentElement.lang = lang;
+    try { localStorage.setItem('scw_lang', lang); } catch (e) {}
+  };
+  btns.forEach(b => b.addEventListener('click', () => pick(b.dataset.pick)));
+  let init = null;
+  try { init = localStorage.getItem('scw_lang'); } catch (e) {}
+  if (!init) {
+    const nav = (navigator.language || 'en').toLowerCase();
+    init = nav.startsWith('vi') ? 'vi' : nav.startsWith('ja') ? 'ja' : 'en';
+  }
+  pick(init);
+</script>
+</body>
+</html>
