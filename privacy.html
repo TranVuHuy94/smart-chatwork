@@ -64,7 +64,7 @@
 
     <h2>3. Data the extension reads</h2>
     <p>While you use Chatwork, the extension reads — in memory, on your device only — the room member list, loaded timeline messages, and your account name that the Chatwork web app itself has already loaded, in order to render mention suggestions, template variables, and the related-messages view. It does not read your Chatwork password, API tokens, or cookies.</p>
-    <p>When you click the preview (👁) button on a file attachment, the extension downloads that one file from Chatwork's own servers — the same file the Chatwork "download" link would give you, using the Chatwork session you are already signed in to — and parses it entirely in your browser to render the preview (Markdown, Excel, Word, PowerPoint). The file's contents are processed in memory on your device and are never sent to the developer or any third party.</p>
+    <p>When you click the preview (👁) button on a file attachment, the extension downloads that one file from Chatwork's own servers — the same file the Chatwork "download" link would give you, using the Chatwork session you are already signed in to — and parses it entirely in your browser to render the preview (Markdown, Excel, Word, PowerPoint, HTML). The file's contents are processed in memory on your device and are never sent to the developer or any third party. HTML attachments are displayed inside a sandboxed frame with scripting disabled and a content-security policy that blocks every outbound request, so a page someone sends you cannot load remote images, fonts, styles or trackers.</p>
 
     <h2>4. Data collection and sharing: none</h2>
     <ul>
@@ -106,6 +106,8 @@
     <h2>3. Dữ liệu extension đọc</h2>
     <p>Khi bạn dùng Chatwork, extension đọc — chỉ trong bộ nhớ, trên máy bạn — danh sách member của room, các tin đã tải trong khung chat, và tên tài khoản của bạn (những dữ liệu mà chính trang Chatwork đã tải sẵn) để hiển thị gợi ý mention, biến template và popup tin liên quan. Extension không đọc mật khẩu, API token hay cookie Chatwork của bạn.</p>
 
+    <p>Khi bạn bấm nút xem trước (👁) trên một file đính kèm, extension tải đúng file đó từ chính máy chủ của Chatwork — cùng file mà nút “download” của Chatwork trả về, dùng phiên đăng nhập Chatwork bạn đang mở — rồi phân tích hoàn toàn trong trình duyệt để dựng bản xem trước (Markdown, Excel, Word, PowerPoint, HTML). Nội dung file được xử lý trong bộ nhớ trên máy bạn, không bao giờ gửi cho tác giả extension hay bất kỳ bên thứ ba nào. Riêng file HTML được hiển thị trong khung sandbox đã tắt script, kèm content-security policy chặn mọi request ra ngoài, nên trang người khác gửi không thể tải ảnh, font, CSS từ xa hay cài tracker.</p>
+
     <h2>4. Thu thập & chia sẻ dữ liệu: không có</h2>
     <ul>
       <li>Không có dữ liệu nào được gửi ra khỏi thiết bị của bạn.</li>
@@ -145,6 +147,8 @@
 
     <h2>3. 読み取るデータ</h2>
     <p>Chatwork の利用中、メンション候補・テンプレート変数・関連メッセージ表示のために、Chatwork ウェブアプリ自身が読み込んだルームメンバー一覧・タイムラインのメッセージ・自分のアカウント名を、端末内のメモリ上でのみ参照します。パスワード、APIトークン、Cookie は読み取りません。</p>
+
+    <p>添付ファイルのプレビュー（👁）ボタンを押すと、本拡張機能はそのファイルだけを Chatwork のサーバーからダウンロードし（Chatwork の「ダウンロード」リンクと同じファイルを、すでにログイン済みのセッションで取得します）、ブラウザ内だけで解析してプレビューを表示します（Markdown・Excel・Word・PowerPoint・HTML）。ファイルの内容は端末のメモリ上で処理され、開発者や第三者に送信されることは一切ありません。HTML ファイルはスクリプトを無効化したサンドボックス枠内で表示し、外部への通信をすべて遮断する content-security policy を適用するため、受け取ったページが外部の画像・フォント・スタイル・トラッカーを読み込むことはできません。</p>
 
     <h2>4. データの収集・共有: なし</h2>
     <ul>
